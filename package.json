@@ -7,7 +7,7 @@
     "start": "node src/server.js",
     "test": "jest",
     "lint": "eslint src/** test/** --fix",
-    "secure-mode": "jest --watch"
+    "secure-mode": "jest --watch --verbose=true"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +21,9 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "consign": "^0.1.6",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "knex": "^0.21.17",
+    "knex-logger": "^0.1.0",
+    "pg": "^8.5.1"
   }
 }
