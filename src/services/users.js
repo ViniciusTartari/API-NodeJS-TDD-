@@ -3,9 +3,9 @@ module.exports = (app) => {
         return app.db('users').select();
     };
     
-    const save = (user) => {
+    const create = (user) => {
         return app.db('users').insert(user, '*');
     };
 
-    return { findAll, save };
+    return { findAll, create };
 };
